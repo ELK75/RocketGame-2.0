@@ -12,6 +12,7 @@ class Cloud():
         self.change_x = 0
         self.change_y = 1
         
+        
     def updateCloud(self, speed, height, width, display):
         self.y += self.change_y + (speed / 10)
         display.blit(self.image,(self.x, self.y))
